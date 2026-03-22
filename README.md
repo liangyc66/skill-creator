@@ -1,11 +1,6 @@
 # skill-creator
 
-语言切换 / Language:
-- 中文：展开第一个折叠块
-- English: expand the second collapsible section
-
-<details open>
-<summary><strong>中文</strong></summary>
+简体中文 | [English](docs/README_EN.md)
 
 本仓库用于发布可复用的 Codex skills，当前包含 `skills/general-project`。
 
@@ -41,55 +36,8 @@ mkdir -p "$dest"
 cp -R ./skills/general-project/. "$dest/"
 ```
 
-安装后调用示例：
+## 调用示例
 
 ```text
 使用 $general-project 初始化并处理当前仓库
 ```
-
-</details>
-
-<details>
-<summary><strong>English</strong></summary>
-
-This repository publishes reusable Codex skills, currently including `skills/general-project`.
-
-## Included Skill
-
-- `general-project`: bootstrap a reusable `.codex` workflow for the target repo, then execute general project tasks with minimal-scope changes and proportional verification.
-
-## Repository Layout
-
-- `skills/`: published skill sources
-- `docs/`: supporting documentation
-
-## Installation (Step-by-Step)
-
-1. Go to this repository root.
-2. Create target directory `~/.codex/skills/general-project`.
-3. Copy all files from `skills/general-project` into that directory.
-4. Explicitly invoke `$general-project` in your session.
-
-### Method A: PowerShell
-
-```powershell
-$dest = Join-Path $env:USERPROFILE ".codex\skills\general-project"
-New-Item -ItemType Directory -Force $dest | Out-Null
-Copy-Item -Path ".\skills\general-project\*" -Destination $dest -Recurse -Force
-```
-
-### Method B: Shell (bash)
-
-```bash
-dest="$HOME/.codex/skills/general-project"
-mkdir -p "$dest"
-cp -R ./skills/general-project/. "$dest/"
-```
-
-Invocation example:
-
-```text
-Use $general-project to bootstrap and handle the current repository
-```
-
-</details>
