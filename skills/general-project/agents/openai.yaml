@@ -1,4 +1,4 @@
 interface:
   display_name: "General Project"
   short_description: "Bootstrap and run a reusable project workflow kit"
-  default_prompt: "Use $general-project to first initialize and validate this repository's workflow kit when needed, preserving any existing root AGENTS.md by injecting the `.codex` entry block, then inspect the target scope, make the smallest correct change, and verify the affected path."
+  default_prompt: "Use $general-project to first initialize and validate this repository's workflow kit when needed, preserving any existing root AGENTS.md by injecting the `.codex` entry block, then inspect the target scope, make the smallest correct change, verify the affected path, and route any audit or review step to an independent Code Review sub-agent when available."

@@ -31,8 +31,10 @@ Responsible for:
 - checking side effects
 - checking missing validation/tests
 - checking scope discipline
+- defaulting to an independent `code review` sub-agent / Code Review mode when available
 
 Reviewer does NOT redesign the task unless explicitly requested.
+If Code Review mode is unavailable, reviewer may fall back to the normal review flow, but must state that the fallback was used.
 
 ### Handoff Agent
 Responsible for:
@@ -130,7 +132,7 @@ Recommended flow for L3:
 
 1. Planner defines scope and task
 2. Executor implements first logical chunk
-3. Reviewer checks changed area
+3. Reviewer checks changed area, preferably through an independent `code review` sub-agent / Code Review mode
 4. Executor resolves issues if needed
 5. Planner decides:
    - continue

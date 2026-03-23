@@ -13,6 +13,11 @@ Use for:
 
 Evaluate the changed code for correctness, side effects, and scope discipline.
 
+Default execution route:
+
+- use an independent `code review` sub-agent / Code Review mode when available
+- if unavailable, perform the same review procedure with a normal reviewer and record the fallback
+
 ---
 
 ## Inputs
@@ -33,6 +38,7 @@ Evaluate the changed code for correctness, side effects, and scope discipline.
 5. Check whether validation/tests are sufficient
 6. Check whether scope expanded unnecessarily
 7. Separate blocking issues from suggestions
+8. State whether the review was done by Code Review mode or by fallback reviewer flow
 
 ---
 

@@ -110,6 +110,18 @@ Use the minimum verification that credibly supports the change:
 
 Do not claim verification that was not performed.
 
+### 5.1 Review routing
+
+When the task includes an audit, review, or post-change inspection step, default to an independent code review sub-agent / Code Review mode when that capability is available.
+
+Use that reviewer to:
+
+- inspect only the changed scope first
+- identify blocking issues, regressions, and missing validation
+- keep review output separate from implementation notes
+
+If Code Review mode or a review sub-agent is unavailable in the current environment, fall back to the repository's normal `review` workflow and state that fallback explicitly.
+
 ### 6. Deliver clearly
 
 Report:
